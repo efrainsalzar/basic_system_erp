@@ -7,6 +7,8 @@ const proveedorRoutes = require("./routes/proveedorRouter");
 const productRoutes = require("./routes/productRouter");
 const comprastRoutes = require("./routes/compraRouter");
 const detalleCompraRoutes = require("./routes/detalleCompraRouter");
+const ventaRoutes = require("./routes/ventaRouter");
+const detalleVentaRoutes = require("./routes/detalleVentaRouter");
 
 const app = express();
 
@@ -21,5 +23,7 @@ app.use("/", proveedorRoutes);
 app.use("/", productRoutes);
 app.use("/", comprastRoutes);
 app.use("/", detalleCompraRoutes);
+app.use("/", ventaRoutes);
+app.use("/", detalleVentaRoutes);
 
 module.exports = app;
